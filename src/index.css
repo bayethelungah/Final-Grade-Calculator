@@ -119,6 +119,7 @@ body{
  }
  #navbar-heading{
      position: relative;
+     text-decoration: none;
      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
      font-size: 25px;
      top: -5px;
@@ -164,24 +165,14 @@ body{
      font-size: 25px;
      font-weight: lighter;
      margin: 10px;
-     color: white;
+     color: rgb(216, 216, 216);
      text-decoration: none;
+     transition: 300ms;
     }
-    #first-navbar::after{
-        content: "";
-        position: absolute;
-        bottom: 0%;
-        left: 0;
-        height: 2px;
-        width: 100%;
-        background: currentColor;
-        transform: scaleX(0);
-        transition: 300ms;
-    }
-    #first-navbar:hover::after{
-        transform: scaleX(1);
-        transition: 300ms;
-        
+    
+    #first-navbar:hover{
+        color: white;
+        text-shadow: 0 2px 20px white;   
         
     }
     
@@ -191,26 +182,16 @@ body{
         font-size: 25px;
         font-weight: lighter;
         margin: 10px;
-        color: white;
+        color: rgb(216, 216, 216);
         text-decoration: none;
-    }
-    
-    #second-navbar::after{ 
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        height: 2px;
-        width: 100%;
-        background: currentColor;
-        transform: scaleX(0);
         transition: 300ms;
     }
     
-    #second-navbar:hover::after{
-        transform: scaleX(1);
-        transition: 300ms;
-        
+    
+    
+    #second-navbar:hover{
+        text-shadow: 0 2px 20px white;
+        color: white;
         
     }
     #third-navbar{ 
@@ -219,27 +200,16 @@ body{
         font-size: 25px;
         font-weight: lighter;
         margin: 10px;
-     
-        color: white;
+        color: rgb(216, 216, 216);
         text-decoration: none;
+        transition: 300ms;
         
     }
-        
-    #third-navbar::after{
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        height: 2px;
-        width: 100%;
-        background: currentColor;
-        transform: scaleX(0);
-        transition: 300ms;
-    } 
     
-    #third-navbar:hover::after{
-        transform: scaleX(1);
-        transition: 300ms;
+    
+    #third-navbar:hover{
+        text-shadow: 0 2px 20px white;
+        color: white;
     }
     #search-input:focus{
         border: none
@@ -320,7 +290,7 @@ body{
        
         font-weight: lighter;
         font-size: 30px;
-        color: white;
+        color: rgb(216, 216, 216);
         background: 0;
         border: none;
         margin-top: 20px;
@@ -328,8 +298,15 @@ body{
         transform: scale(1);
         transition: 300ms;
  
-        
     }
+
+    #calculate-button:hover{
+        color: white;
+        
+
+    }
+
+
     #calculate-button::before{
 
         content: "";
@@ -439,8 +416,16 @@ body{
         background: 0;
         border: none;
         font-weight: lighter;
-    
+        color: rgb(216, 216, 216);
+        transition: 300ms;
     }
+
+    #reset-button:hover{
+        color: white;
+
+    }
+
+
     #reset-button::before{
 
         content: "";
